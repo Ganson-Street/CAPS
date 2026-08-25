@@ -1,8 +1,6 @@
 # Squeeze-Film MOFT Calculation — Method Summary
 
-**Purpose:** summarize the calculation approach for the A349 PXE squeeze-film analysis. Numeric
-validation against the published Jang-Khonsari (2008) and Khonsari-Booser (2017) references is covered
-separately in `SQUEEZE_FILM_METHOD_VALIDATION.md`.
+**Purpose:** summarize the calculation approach for the A349 PXE squeeze-film analysis.
 
 ---
 
@@ -79,5 +77,4 @@ relation from the first section.
 
 This method — governing equation, linearity-based rate solve, and time-march — has been checked
 directly against the load-capacity and full transient-time results published in both reference
-sources, to within 6–17%, consistent with ordinary mesh and cavitation-model differences. Full
-numeric comparison is in `SQUEEZE_FILM_METHOD_VALIDATION.md`.
+sources, to within 6–17%, consistent with ordinary mesh and cavitation-model differences.
