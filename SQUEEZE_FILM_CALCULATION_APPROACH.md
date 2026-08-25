@@ -27,11 +27,7 @@ finite-length, axially-open squeeze-film bearings: solve the Reynolds equation f
 exploit its linearity in approach rate to avoid an iterative speed search, and march eccentricity
 forward in fixed increments, accumulating elapsed time until it reaches the time available.
 
-$$
-\frac{1}{R^2}\frac{\partial}{\partial\theta}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial\theta}\right)
-+ \frac{\partial}{\partial z}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial z}\right)
-= \frac{\partial h}{\partial t}, \qquad p\big|_{z=0,L} = 0
-$$
+$$\frac{1}{R^2}\frac{\partial}{\partial\theta}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial\theta}\right) + \frac{\partial}{\partial z}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial z}\right) = \frac{\partial h}{\partial t}, \qquad p\big|_{z=0,L} = 0$$
 
 This is algebraically identical to the governing equation in both references (see the validation doc,
 §2, for the direct comparison) — only the right-hand side differs from the rotating case, where it's
@@ -48,10 +44,7 @@ equation is linear in $\dot\varepsilon$, pressure (and therefore integrated load
 it. This lets us solve once at $\dot\varepsilon = 1$ and obtain the true rate by a direct ratio, rather
 than iterating to convergence at every step:
 
-$$
-W_{unit}(\varepsilon) = \iint p\,dA \quad\text{(load if the rate were exactly 1)}, \qquad
-\dot\varepsilon = \frac{W}{W_{unit}(\varepsilon)}
-$$
+$$W_{unit}(\varepsilon) = \iint p\,dA \quad\text{(load if the rate were exactly 1)}, \qquad \dot\varepsilon = \frac{W}{W_{unit}(\varepsilon)}$$
 
 $W_{unit}$ is the load-per-unit-rate at the current $\varepsilon$; dividing the actual applied load $W$
 by it gives $\dot\varepsilon$ directly. This is the same device both reference sources use in their own
