@@ -27,8 +27,7 @@ forward in fixed increments, accumulating elapsed time until it reaches the time
 
 $$\frac{1}{R^2}\frac{\partial}{\partial\theta}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial\theta}\right) + \frac{\partial}{\partial z}\!\left(\frac{h^3}{12\mu}\frac{\partial p}{\partial z}\right) = \frac{\partial h}{\partial t}, \qquad p\big|_{z=0,L} = 0$$
 
-This is algebraically identical to the governing equation in both references (see the validation doc,
-§2, for the direct comparison) — only the right-hand side differs from the rotating case, where it's
+This is algebraically identical to the governing equation in both references — only the right-hand side differs from the rotating case, where it's
 driven by $U\,\partial h/\partial\theta$ instead of $\partial h/\partial t$.
 
 ---
